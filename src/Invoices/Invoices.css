@@ -1,0 +1,31 @@
+.invoices-wrapper {
+  border: 1px black solid;
+  margin: 10px;
+}
+ul {
+  list-style-type: none;
+}
+.invoices-box {
+  border: 1px black solid;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  column-gap: 20rem;
+}
+.invoice-header {
+  text-emphasis: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  column-gap: 20rem;
+}
+.invoice-left {
+  float: left;
+}
+.invoice-right {
+  /* float: right; */
+}
