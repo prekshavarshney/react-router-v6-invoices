@@ -1,6 +1,6 @@
 import "./Invoices.css";
 import { useState } from "react";
-import { invoices as all_invoices, customers } from "../../placeholder-data";
+import { invoices as all_invoices, customers } from "../placeholder-data";
 import { Link } from "react-router-dom";
 export default function Invoices() {
   const [invoices, setInvoices] = useState(all_invoices);

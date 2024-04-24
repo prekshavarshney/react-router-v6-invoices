@@ -1,7 +1,13 @@
-import { customers, invoices as all_invoices } from "../../placeholder-data";
+import { customers, invoices as all_invoices } from "../placeholder-data";
 import { useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import {
+  useLocation,
+  useParams,
+  redirect,
+  useNavigate,
+} from "react-router-dom";
 export default function CreateInvoice(props) {
+  const navigate = useNavigate();
   const { id } = useParams();
   const [customerId, setCustomerId] = useState("");
   const [amount, setAmount] = useState(0);
@@ -36,6 +42,7 @@ export default function CreateInvoice(props) {
         date: new Date().toLocaleDateString(),
       },
     ]);
+    navigate("/");
   };
 
   return (
